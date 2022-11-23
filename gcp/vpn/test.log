@@ -1,0 +1,69 @@
+[0m[1mgoogle_compute_address.vpn_static_ip2: Refreshing state... [id=projects/fleet-fortress-366707/regions/asia-northeast2/addresses/vpn-static-ip2][0m
+[0m[1mgoogle_compute_network.network1: Refreshing state... [id=projects/fleet-fortress-366707/global/networks/network1][0m
+[0m[1mgoogle_compute_network.network2: Refreshing state... [id=projects/fleet-fortress-366707/global/networks/network2][0m
+[0m[1mgoogle_compute_address.vpn_static_ip1: Refreshing state... [id=projects/fleet-fortress-366707/regions/asia-northeast3/addresses/vpn-static-ip1][0m
+[0m[1mgoogle_compute_vpn_gateway.target_gateway1: Refreshing state... [id=projects/fleet-fortress-366707/regions/asia-northeast3/targetVpnGateways/vpn1][0m
+[0m[1mgoogle_compute_firewall.network1-allow-network1: Refreshing state... [id=projects/fleet-fortress-366707/global/firewalls/network1-allow-network1][0m
+[0m[1mgoogle_compute_firewall.network1-allow-network2: Refreshing state... [id=projects/fleet-fortress-366707/global/firewalls/network1-allow-network2][0m
+[0m[1mgoogle_compute_vpn_gateway.target_gateway2: Refreshing state... [id=projects/fleet-fortress-366707/regions/asia-northeast2/targetVpnGateways/vpn2][0m
+[0m[1mgoogle_compute_forwarding_rule.fr2_esp: Refreshing state... [id=projects/fleet-fortress-366707/regions/asia-northeast2/forwardingRules/fr2-esp][0m
+[0m[1mgoogle_compute_forwarding_rule.fr2_udp4500: Refreshing state... [id=projects/fleet-fortress-366707/regions/asia-northeast2/forwardingRules/fr2-udp4500][0m
+[0m[1mgoogle_compute_forwarding_rule.fr2_udp500: Refreshing state... [id=projects/fleet-fortress-366707/regions/asia-northeast2/forwardingRules/fr2-udp500][0m
+[0m[1mgoogle_compute_forwarding_rule.fr1_udp500: Refreshing state... [id=projects/fleet-fortress-366707/regions/asia-northeast3/forwardingRules/fr1-udp500][0m
+[0m[1mgoogle_compute_forwarding_rule.fr1_esp: Refreshing state... [id=projects/fleet-fortress-366707/regions/asia-northeast3/forwardingRules/fr1-esp][0m
+[0m[1mgoogle_compute_forwarding_rule.fr1_udp4500: Refreshing state... [id=projects/fleet-fortress-366707/regions/asia-northeast3/forwardingRules/fr1-udp4500][0m
+[0m[1mgoogle_compute_vpn_tunnel.tunnel2: Refreshing state... [id=projects/fleet-fortress-366707/regions/asia-northeast2/vpnTunnels/tunnel2][0m
+[0m[1mgoogle_compute_vpn_tunnel.tunnel1: Refreshing state... [id=projects/fleet-fortress-366707/regions/asia-northeast3/vpnTunnels/tunnel1][0m
+[0m[1mgoogle_compute_route.route2: Refreshing state... [id=projects/fleet-fortress-366707/global/routes/route2][0m
+[0m[1mgoogle_compute_route.route1: Refreshing state... [id=projects/fleet-fortress-366707/global/routes/route1][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [33m~[0m update in-place
+[0m
+Terraform will perform the following actions:
+
+[1m  # google_compute_firewall.network1-allow-network1[0m will be updated in-place[0m[0m
+[0m  [33m~[0m[0m resource "google_compute_firewall" "network1-allow-network1" {
+        [1m[0mid[0m[0m                      = "projects/fleet-fortress-366707/global/firewalls/network1-allow-network1"
+        [1m[0mname[0m[0m                    = "network1-allow-network1"
+      [33m~[0m [0m[1m[0msource_ranges[0m[0m           = [
+          [31m-[0m [0m"0.0.0.0/0",
+            [90m# (1 unchanged element hidden)[0m[0m
+        ]
+        [90m# (12 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m [0mallow {
+          [31m-[0m [0m[1m[0mports[0m[0m    = [] [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mprotocol[0m[0m = "esp" [90m->[0m [0m[90mnull[0m[0m
+        }
+
+        [90m# (3 unchanged blocks hidden)[0m[0m
+    }
+
+[1m  # google_compute_firewall.network1-allow-network2[0m will be updated in-place[0m[0m
+[0m  [33m~[0m[0m resource "google_compute_firewall" "network1-allow-network2" {
+        [1m[0mid[0m[0m                      = "projects/fleet-fortress-366707/global/firewalls/network1-allow-network2"
+        [1m[0mname[0m[0m                    = "network1-allow-network2"
+      [33m~[0m [0m[1m[0msource_ranges[0m[0m           = [
+          [31m-[0m [0m"0.0.0.0/0",
+            [90m# (1 unchanged element hidden)[0m[0m
+        ]
+        [90m# (12 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m [0mallow {
+          [31m-[0m [0m[1m[0mports[0m[0m    = [] [90m->[0m [0m[90mnull[0m[0m
+          [31m-[0m [0m[1m[0mprotocol[0m[0m = "esp" [90m->[0m [0m[90mnull[0m[0m
+        }
+
+        [90m# (3 unchanged blocks hidden)[0m[0m
+    }
+
+[0m[1mPlan:[0m 0 to add, 2 to change, 0 to destroy.
+[0m[0m[1m
+Do you want to perform these actions?[0m
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  [1mEnter a value:[0m [0m
+Apply cancelled.
